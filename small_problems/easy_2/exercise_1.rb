@@ -1,12 +1,7 @@
 # rb101_109 / easy_2 / exercise_1.rb
 
-puts "What's your name?"
-name = gets.chomp
+# Build a program that randomly generates and prints Teddy's age.
+# To get the age, you should generate a random number between 20 and 200.
 
 age = rand(20..200)
-  
-if name.empty?
-  puts "Teddy is #{age} years old!"
-else
-  puts "#{name} is #{age} years old!"
-end
+puts "Teddy is #{age} years old!"

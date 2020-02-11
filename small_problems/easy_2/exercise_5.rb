@@ -1,10 +1,13 @@
 # rb101_109 / easy_2 / exercise_5.rb
 
-puts "What is your name?"
+# Write a program that will ask for user's name. The program will then greet
+# the user. If the user writes "name!" then the computer yells back to the user.
+
+puts 'What is your name?'
 name = gets.chomp
 name_chars = name.chars
 
-if name_chars[-1] == "!"
+if name_chars[-1] == '!'
   name_chars.pop
   puts "HELLO #{name_chars.join.upcase}. WHY ARE WE SCREAMING?"
 else

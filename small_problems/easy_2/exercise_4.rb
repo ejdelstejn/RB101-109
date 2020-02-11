@@ -1,9 +1,12 @@
 # rb101_109 / easy_2 / exercise_4.rb
 
-puts "What is your age?"
+# Build a program that displays when the user will retire and how many
+# years she has to work till retirement.
+
+puts 'What is your age?'
 age = gets.to_i
 
-puts "At what age would you like to retire?"
+puts 'At what age would you like to retire?'
 retire_age = gets.to_i
 
 years_left = retire_age - age
