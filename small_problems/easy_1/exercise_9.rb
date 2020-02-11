@@ -1,5 +1,8 @@
 # rb101_109 / easy_1 / exercise_9.rb
 
+# Write a method that takes one argument, a positive integer,
+# and returns the sum of its digits.
+
 def sum(int)
   int_to_s = int.to_s.chars
   total = 0
