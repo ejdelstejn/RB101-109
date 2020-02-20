@@ -16,6 +16,8 @@ You may assume the string will always contain a valid number.
 You may not use any of the standard conversion methods available in Ruby, 
 such as String#to_i, Integer(), etc. You may, however, use the 
 string_to_integer method from the previous lesson. 
+
+-----------------------------------
 =end
 
 NUMBERS_HASH = {
@@ -35,21 +37,15 @@ end
 
 def string_to_signed_integer(string)
   if string.start_with?('-')
-    string.delete('-')
-    number = string_to_integer(string)
-    number.class
+    0 - string_to_integer(string.delete('-'))
   elsif string.start_with?('+')
-    string.delete('+')
-    number = string_to_integer(string)
-    number.class
+    string_to_integer(string.delete('+'))
   else
-    number = string_to_integer(string)
-    number.class
+    string_to_integer(string)
   end  
 end
 
-puts string_to_signed_integer('4321') # ==> 4321
-puts string_to_signed_integer('-570') # ==> -570
-puts string_to_signed_integer('+100') # ==> 100
-
+puts string_to_signed_integer('4321') # => 4321
+puts string_to_signed_integer('-570') # => -570
+puts string_to_signed_integer('+100') # => 100
 

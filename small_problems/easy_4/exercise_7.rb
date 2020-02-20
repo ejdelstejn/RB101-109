@@ -31,5 +31,8 @@ def string_to_integer(string)
   value
 end
 
-puts string_to_integer('4321') # ==> 4321
-puts string_to_integer('570') # ==> 570
+puts string_to_integer('4321') # => 4321
+puts string_to_integer('570') # => 570
+puts string_to_integer('5')
+puts string_to_integer('452332432')
+puts string_to_integer('999')
