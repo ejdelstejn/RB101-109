@@ -1,1 +1,0 @@
-# rb101_109 / small_problems / easy_8 / exercise_6.rb

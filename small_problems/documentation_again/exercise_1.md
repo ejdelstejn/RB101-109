@@ -15,5 +15,5 @@ How they're called:
 ::path is called directly onto the Class: File.path
 #path is called onto an instance of that class: File.new("testfile").path
 Their return values:
-::path returns a string when #path returns a filename
+::path returns a string; #path returns a filename
 ::path returns the string representation of the path, while #path returns the pathname used to create file as a string
