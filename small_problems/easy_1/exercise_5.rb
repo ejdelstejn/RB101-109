@@ -1,4 +1,6 @@
-# rb101_109 / easy_1 / exercise_5.rb
+# rb101_109 / small_problems / easy_1 / exercise_5.rb
+
+# Reverse It (Part 1)
 
 # Write a method that takes one argument, a string, and returns a new string
 # with the words in reverse order.

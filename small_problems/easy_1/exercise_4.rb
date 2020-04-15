@@ -1,4 +1,6 @@
-# rb101_109 / easy_1 / exercise_4.rb
+# rb101_109 / small_problems / easy_1 / exercise_4.rb
+
+# How Many?
 
 # Write a method that counts the number of occurrences of each
 # element in a given array.
@@ -8,12 +10,20 @@ vehicles = [
   'motorcycle', 'motorcycle', 'car', 'truck'
 ]
 
-def count_occurrences(array)
-  count = Hash.new(0)
-  array.each do |item|
-    count[item] += 1
-  end
-  puts count
+# The words in the array are case-sensitive: 'suv' != 'SUV'. ` Once counted, 
+# print each element alongside the number of occurrences.
+
+# Expected output:
+
+# car => 4
+# truck => 3
+# SUV => 1
+# motorcycle => 2
+
+def count_occurrences(list)
+  element_count = Hash.new(0)
+  list.each {|item| element_count[item] += 1}
+  element_count.each {|element, count| puts "#{element} => #{count}"}
 end
 
 count_occurrences(vehicles)
